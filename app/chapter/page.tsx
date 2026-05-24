@@ -22,7 +22,7 @@ export default function Chapter() {
           </p>
 
           <a
-            href="https://docs.google.com/forms"
+            href="https://forms.gle/Ypn6cgjhMTPUtdNDA"
             target="_blank"
             className="inline-block mt-10 px-8 py-3 bg-white text-[#0B2A52] uppercase text-sm tracking-widest"
           >
@@ -116,11 +116,11 @@ export default function Chapter() {
           </h2>
 
           <p className="mt-6 text-white/80">
-            Bring FLY to your school community.
+            Bring FLY to your community.
           </p>
 
           <a
-            href="https://docs.google.com/forms"
+            href="https://forms.gle/Ypn6cgjhMTPUtdNDA"
             target="_blank"
             className="inline-block mt-10 px-8 py-3 bg-white text-[#071A33] uppercase text-sm tracking-widest"
           >

@@ -4,6 +4,13 @@ import { Playfair_Display, Inter } from "next/font/google";
 const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "FLY Initiative",
+  icons: {
+    icon: "/favicon.png",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {

@@ -20,7 +20,7 @@ export default function Home() {
         >
           <h1 className={`${serif.className} text-6xl md:text-7xl font-semibold leading-tight`}>
             <span className="text-[#103058]">Financial Literacy</span>{" "}
-            for Youth
+            for Youth 
           </h1>
 
           <motion.p
