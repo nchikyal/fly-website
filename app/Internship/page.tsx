@@ -8,9 +8,6 @@ const sans = Inter({ subsets: ["latin"] });
 export default function Internship() {
   return (
       <div className={`${sans.className} text-[#071A33] bg-white`}>
-      <h1 style={{color:"red", fontSize:"50px"}}>
-        THIS IS LIVE TEST 123
-      </h1>
       {/* HERO */}
       <section className="py-28 px-6 bg-[#0B2A52] text-white text-center">
         <div className="max-w-4xl mx-auto">
