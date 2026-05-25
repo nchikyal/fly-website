@@ -36,7 +36,7 @@ export default function Board() {
             <div>
               <img
                 src="/board/nishka.png"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-contain bg-gray-100"
                 alt="Board Member"
               />
               <p className="mt-4 font-semibold">Nishka Chikyal</p>
@@ -74,7 +74,7 @@ export default function Board() {
             <div>
               <img
                 src="/board/nishi.png"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-contain bg-gray-100"
                 alt="Board Member"
               />
               <p className="mt-4 font-semibold">Nishitha Ravi</p>
