@@ -35,7 +35,7 @@ export default function Board() {
             {/* MEMBER 1 */}
             <div>
               <img
-                src="/board/member1.jpg"
+                src="/board/nishka.png"
                 className="w-full h-64 object-cover"
                 alt="Board Member"
               />
@@ -73,7 +73,7 @@ export default function Board() {
  {/* MEMBER 4 */}
             <div>
               <img
-                src="/board/member2.jpg"
+                src="/board/nishi.png"
                 className="w-full h-64 object-cover"
                 alt="Board Member"
               />
