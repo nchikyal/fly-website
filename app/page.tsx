@@ -18,9 +18,11 @@ export default function Home() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <h1 className={`${serif.className} text-6xl md:text-7xl font-semibold leading-tight`}>
+          <h1
+            className={`${serif.className} text-6xl md:text-7xl font-semibold leading-tight`}
+          >
             <span className="text-[#103058]">Financial Literacy</span>{" "}
-            for Youth 
+            for Youth
           </h1>
 
           <motion.p
@@ -29,9 +31,9 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mt-6 text-gray-600 text-lg leading-relaxed"
           >
-            A student-led initiative building real financial understanding through education, opportunity, and leadership.
+            A student-led initiative building real financial understanding
+            through education, opportunity, and leadership.
           </motion.p>
-
         </motion.div>
       </section>
 
@@ -49,9 +51,10 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 text-white/80 text-lg leading-relaxed">
-            Financial Literacy for Youth (FLY) is a student-led organization focused on
-            closing the gap between classroom learning and real-world financial skills
-            through programs, internships, and youth leadership.
+            Financial Literacy for Youth (FLY) is a student-led organization
+            focused on closing the gap between classroom learning and real-world
+            financial skills through programs, internships, and youth
+            leadership.
           </p>
         </motion.div>
       </section>
@@ -76,12 +79,44 @@ export default function Home() {
             </p>
 
             <h3 className="mt-2 text-xl font-semibold">
-              NJ Virtual Legistlative Briefing: Bill S3462
+              NJ Virtual Legislative Briefing: Bill S3462
             </h3>
 
             <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-              A briefing focused on bill S3462 sponsored by Senator Vin Gopal featuring Professor John Longo and the Futures Financials initiative
+              A briefing focused on Bill S3462 sponsored by Senator Vin Gopal
+              featuring Professor John Longo and the Futures Financials
+              initiative.
             </p>
+
+            {/* FLYER */}
+            <div className="mt-6">
+              <img
+                src="/events/s3462-flyer.png"
+                alt="Event Flyer"
+                className="w-full max-w-md border border-gray-200 shadow-sm"
+              />
+            </div>
+
+            {/* BUTTONS */}
+            <div className="flex flex-wrap gap-4 mt-8">
+
+              <a
+                href="YOUR_RSVP_LINK"
+                target="_blank"
+                className="px-5 py-3 bg-[#103058] text-white text-xs uppercase tracking-widest hover:opacity-90 transition"
+              >
+                RSVP
+              </a>
+
+              <a
+                href="YOUR_ZOOM_LINK"
+                target="_blank"
+                className="px-5 py-3 border border-[#103058] text-[#103058] text-xs uppercase tracking-widest hover:bg-[#103058] hover:text-white transition"
+              >
+                Join Zoom
+              </a>
+
+            </div>
           </motion.div>
 
         </div>
