@@ -5,7 +5,21 @@ const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "FLY Initiative",
+  title: "FLY Youth Initiative | Financial Literacy for Youth",
+  description:
+    "FLY Youth Initiative is a student-led nonprofit providing financial literacy education, internships, leadership opportunities, and youth advocacy.",
+  keywords: [
+    "financial literacy",
+    "financial literacy for youth",
+    "FLY Youth Initiative",
+    "FLY Initiative",
+    "student nonprofit",
+    "financial education",
+    "youth financial literacy",
+    "financial literacy nonprofit",
+    "financial education students",
+    "student-led nonprofit",
+  ],
   icons: {
     icon: "/favicon.png",
   },
@@ -29,7 +43,6 @@ export default function RootLayout({
             </h1>
 
             <nav className="flex gap-8 text-xs uppercase tracking-[0.25em] text-white/70">
-
               <a href="/" className="hover:text-white">Home</a>
               <a href="/education" className="hover:text-white">Education</a>
               <a href="/Internship" className="hover:text-white">Internship</a>
