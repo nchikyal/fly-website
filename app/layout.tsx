@@ -45,7 +45,7 @@ export default function RootLayout({
             <nav className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70">
               <a href="/" className="hover:text-white">Home</a>
               <a href="/education" className="hover:text-white">Education</a>
-              <a href="/internship" className="hover:text-white">Internship</a>
+              <a href="/Internship" className="hover:text-white">Internship</a>
               <a href="/board" className="hover:text-white">Board</a>
               <a href="/chapter" className="hover:text-white">Create a Chapter</a>
             </nav>
