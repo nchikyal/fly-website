@@ -59,69 +59,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* UPCOMING EVENTS */}
-      <section id="events" className="py-28 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-
-          <h2 className={`${serif.className} text-3xl font-semibold`}>
-            Upcoming Events
-          </h2>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="mt-12 border border-gray-200 bg-white p-10 text-left hover:shadow-md transition"
-          >
-            <p className="text-xs uppercase tracking-widest text-gray-400">
-              Coming Soon: May 27th, 2026
-            </p>
-
-            <h3 className="mt-2 text-xl font-semibold">
-              NJ Virtual Legislative Briefing: Bill S3462
-            </h3>
-
-            <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-              A briefing focused on Bill S3462 sponsored by Senator Vin Gopal
-              featuring Professor John Longo and the Futures Financials
-              initiative.
-            </p>
-
-            {/* FLYER */}
-            <div className="mt-6">
-              <img
-                src="/events/s3462-flyer.png"
-                alt="Event Flyer"
-                className="w-full max-w-md border border-gray-200 shadow-sm"
-              />
-            </div>
-
-            {/* BUTTONS */}
-            <div className="flex flex-wrap gap-4 mt-8">
-
-              <a
-                href="YOUR_RSVP_LINK"
-                target="_blank"
-                className="px-5 py-3 bg-[#103058] text-white text-xs uppercase tracking-widest hover:opacity-90 transition"
-              >
-                RSVP
-              </a>
-
-              <a
-                href="YOUR_ZOOM_LINK"
-                target="_blank"
-                className="px-5 py-3 border border-[#103058] text-[#103058] text-xs uppercase tracking-widest hover:bg-[#103058] hover:text-white transition"
-              >
-                Join Zoom
-              </a>
-
-            </div>
-          </motion.div>
-
-        </div>
-      </section>
-
     </div>
   );
 }
