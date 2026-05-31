@@ -36,16 +36,16 @@ export default function RootLayout({
 
         {/* TOP NAVBAR */}
         <header className="sticky top-0 z-50 bg-[#103058] text-white">
-          <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+          <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
 
-            <h1 className="tracking-widest font-semibold text-lg">
+            <h1 className="tracking-widest font-semibold text-lg text-center md:text-left">
               FLY INITIATIVE
             </h1>
 
-            <nav className="flex gap-8 text-xs uppercase tracking-[0.25em] text-white/70">
+            <nav className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70">
               <a href="/" className="hover:text-white">Home</a>
               <a href="/education" className="hover:text-white">Education</a>
-              <a href="/Internship" className="hover:text-white">Internship</a>
+              <a href="/internship" className="hover:text-white">Internship</a>
               <a href="/board" className="hover:text-white">Board</a>
               <a href="/chapter" className="hover:text-white">Create a Chapter</a>
             </nav>
