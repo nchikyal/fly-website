@@ -73,7 +73,7 @@ export default function Board() {
             
             <div>
               <img
-                src="/board/yashica.png"
+                src="/board/amithi.png"
                 className="w-full h-64 object-contain bg-gray-100"
                 alt="Board Member"
               />
