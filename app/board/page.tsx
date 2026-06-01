@@ -70,6 +70,30 @@ export default function Board() {
               <p className="text-sm text-gray-600">New Jersey, USA</p>
               <p className="text-sm text-gray-600">Director of Grants & Development</p>
             </div>
+            
+            <div>
+              <img
+                src="/board/yashica.png"
+                className="w-full h-64 object-contain bg-gray-100"
+                alt="Board Member"
+              />
+              <p className="mt-4 font-semibold">Amithi Aleti</p>
+              <p className="text-sm text-gray-600">Biotechnology High School</p>
+              <p className="text-sm text-gray-600">New Jersey, USA</p>
+              <p className="text-sm text-gray-600">Chief Event Coordinator</p>
+            </div>
+
+            <div>
+              <img
+                src="/board/yashica.png"
+                className="w-full h-64 object-contain bg-gray-100"
+                alt="Board Member"
+              />
+              <p className="mt-4 font-semibold">Yashica Uppuganti</p>
+              <p className="text-sm text-gray-600">Mountain House High School</p>
+              <p className="text-sm text-gray-600">California, USA</p>
+              <p className="text-sm text-gray-600">Director of West Coast Operations</p>
+            </div>
  {/* MEMBER 4 */}
             <div>
               <img
