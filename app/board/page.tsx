@@ -80,7 +80,7 @@ export default function Board() {
               <p className="mt-4 font-semibold">Amithi Aleti</p>
               <p className="text-sm text-gray-600">Biotechnology High School</p>
               <p className="text-sm text-gray-600">New Jersey, USA</p>
-              <p className="text-sm text-gray-600">Chief Event Coordinator</p>
+              <p className="text-sm text-gray-600">Director of Event Coordination</p>
             </div>
 
             <div>
