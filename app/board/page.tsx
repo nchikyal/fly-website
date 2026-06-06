@@ -85,6 +85,30 @@ export default function Board() {
 
             <div>
               <img
+                src="/board/avani.png"
+                className="w-full h-64 object-contain bg-gray-100"
+                alt="Board Member"
+              />
+              <p className="mt-4 font-semibold">Avani Menon</p>
+              <p className="text-sm text-gray-600">Biotechnology High School</p>
+              <p className="text-sm text-gray-600">New Jersey, USA</p>
+              <p className="text-sm text-gray-600">Director of Outreach</p>
+            </div>
+
+            <div>
+              <img
+                src="/board/sri.png"
+                className="w-full h-64 object-contain bg-gray-100"
+                alt="Board Member"
+              />
+              <p className="mt-4 font-semibold">Srisamhita</p>
+              <p className="text-sm text-gray-600">Freehold High School</p>
+              <p className="text-sm text-gray-600">New Jersey, USA</p>
+              <p className="text-sm text-gray-600">Director of Talent Acquisition</p>
+            </div>
+
+            <div>
+              <img
                 src="/board/yashica.png"
                 className="w-full h-64 object-contain bg-gray-100"
                 alt="Board Member"
