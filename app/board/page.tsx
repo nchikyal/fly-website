@@ -103,7 +103,7 @@ export default function Board() {
                 className="w-full h-64 object-contain bg-gray-100"
                 alt="Board Member"
               />
-              <p className="mt-4 font-semibold">Zoya Adeel</p>
+              <p className="mt-4 font-semibold">Nishitha Ravi</p>
               <p className="text-sm text-gray-600">Biotechnology High School</p>
               <p className="text-sm text-gray-600">New Jersey, USA</p>
               <p className="text-sm text-gray-600">Director of Social Media Outreach</p>
