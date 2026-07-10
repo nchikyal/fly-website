@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function ChapterDropdown() {
+export default function FellowDropdown() {
   const [open, setOpen] = useState(false);
 
   return (

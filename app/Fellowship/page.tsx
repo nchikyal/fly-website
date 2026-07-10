@@ -54,7 +54,80 @@ export default function Fellows() {
         </div>
 
       </section>
+{/* ================= WHY JOIN ================= */}
 
+<section className="py-28 px-6 bg-white">
+
+  <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+
+    <div>
+
+      <p className="uppercase tracking-[0.35em] text-sm text-[#2F80ED] font-semibold">
+        Why Join?
+      </p>
+
+      <h2 className={`${serif.className} mt-5 text-4xl md:text-5xl leading-tight`}>
+        Real Business
+        <br />
+        Experience.
+        <br />
+        Before College.
+      </h2>
+
+      <p className="mt-8 text-lg text-gray-600 leading-relaxed">
+        The FLY Corporate Strategy Fellowship connects ambitious high school
+        students with businesses and nonprofit organizations to solve real
+        strategic challenges. Fellows gain hands-on experience, collaborate
+        with professionals, and build a portfolio of meaningful work while
+        developing leadership, communication, and analytical skills.
+      </p>
+
+    </div>
+
+
+    <div className="grid gap-6">
+
+      <div className="rounded-3xl bg-[#071A33] text-white p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Completely Free
+        </h3>
+
+        <p className="mt-3 text-white/70">
+          There are no application fees or program costs to participate.
+        </p>
+
+      </div>
+
+      <div className="rounded-3xl bg-[#EAF3FF] p-8">
+
+        <h3 className="text-2xl font-semibold text-[#071A33]">
+          Fully Virtual
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          Collaborate remotely with organizations from anywhere.
+        </p>
+
+      </div>
+
+      <div className="rounded-3xl border border-gray-200 p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Designed for High School Students
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          Gain professional experience before entering college or internships.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
       {/* WHAT YOU'LL DO */}
 
 <section className="py-28 px-6">
@@ -138,6 +211,120 @@ export default function Fellows() {
           Create polished presentations that communicate research findings,
           strategic recommendations, and business proposals to corporate
           partners and stakeholders.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* ================= PROGRAM BENEFITS ================= */}
+
+<section className="py-28 px-6 bg-[#F8FAFC]">
+
+  <div className="max-w-6xl mx-auto">
+
+    <div className="text-center">
+
+      <p className="uppercase tracking-[0.35em] text-sm text-[#103058] font-semibold">
+        Program Benefits
+      </p>
+
+      <h2 className={`${serif.className} mt-5 text-4xl md:text-5xl`}>
+        More Than Just an Internship
+      </h2>
+
+      <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
+        Fellows leave with tangible experience, professional skills, and a
+        portfolio that demonstrates real business impact.
+      </p>
+
+    </div>
+
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+      <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Capstone Portfolio
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Build a professional portfolio showcasing the consulting projects,
+          research, presentations, and strategic work you complete.
+        </p>
+
+      </div>
+
+
+      <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Professional Experience
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Work with businesses and nonprofits on projects that create measurable
+          value and practical experience.
+        </p>
+
+      </div>
+
+
+      <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Leadership Development
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Strengthen communication, teamwork, problem-solving, and project
+          management skills.
+        </p>
+
+      </div>
+
+
+      <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Resume Builder
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Showcase meaningful consulting experience when applying for college,
+          internships, scholarships, and future opportunities.
+        </p>
+
+      </div>
+
+
+      <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Flexible Participation
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Participate during the Fall, Spring, or Summer cohort based on your
+          schedule.
+        </p>
+
+      </div>
+
+
+      <div className="bg-[#071A33] text-white rounded-3xl shadow-xl p-8">
+
+        <h3 className="text-2xl font-semibold">
+          Continue Growing
+        </h3>
+
+        <p className="mt-4 text-white/70">
+          Fellows may reapply for future cohorts to continue working with
+          organizations and expand their professional portfolio.
         </p>
 
       </div>
@@ -278,7 +465,6 @@ export default function Fellows() {
   </div>
 
 </section>
-
 {/* ================= FINAL CTA ================= */}
 
 <section className="py-32 px-6 bg-[#071A33] text-white">
@@ -292,7 +478,7 @@ export default function Fellows() {
     <h2 className={`${serif.className} mt-6 text-4xl md:text-6xl leading-tight`}>
       Ready to gain
       <br />
-      real-world corporate experience?
+      real-world business experience?
     </h2>
 
     <p className="mt-8 text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
