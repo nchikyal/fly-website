@@ -30,7 +30,7 @@ export default function ChapterDropdown() {
         <div className="absolute top-8 left-0 bg-[#071A33] rounded-xl shadow-xl w-64 p-3 border border-white/10">
 
           <Link
-            href="/chapter"
+            href="/page"
             className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
           >
             Chapter Overview
@@ -38,7 +38,7 @@ export default function ChapterDropdown() {
 
 
           <Link
-            href="/chapter/howto"
+            href="/howto"
             className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
           >
             How to Start a Chapter
@@ -46,7 +46,7 @@ export default function ChapterDropdown() {
 
 
           <Link
-            href="/chapter/pathways"
+            href="/pathways"
             className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
           >
             Chapter Pathways
