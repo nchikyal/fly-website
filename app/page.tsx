@@ -8,81 +8,591 @@ const sans = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`${sans.className} bg-[#F8FAFC] text-[#071A33]`}>
+    <main className={`${sans.className} bg-white text-[#071A33]`}>
 
-      {/* ================= ANNOUNCEMENT BAR ================= */}
+      {/* ================= STICKY ANNOUNCEMENT ================= */}
 
-      <div className="bg-[#071A33] text-white text-center py-3 px-4 text-sm tracking-wide">
-        Applications for the{" "}
-        <span className="font-semibold">
-          FLY Corporate Fellowship
-        </span>{" "}
-        are now open.
-        <a
-          href="/internship"
-          className="ml-3 underline underline-offset-4 hover:text-blue-200 transition"
-        >
-          Apply →
-        </a>
+      <div className="sticky top-0 z-50 bg-[#0A2347] text-white border-b border-white/10">
+
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-center gap-3 text-sm">
+
+          <span className="font-semibold text-blue-300">
+            Applications Open
+          </span>
+
+          <span className="hidden md:inline">
+            FLY Corporate Fellowship
+          </span>
+
+          <a
+            href="/internship"
+            className="underline underline-offset-4 hover:text-blue-200 transition"
+          >
+            Apply →
+          </a>
+
+        </div>
+
       </div>
 
       {/* ================= HERO ================= */}
 
-      <section className="relative overflow-hidden">
-
-        {/* Background */}
-
-        <div className="absolute inset-0 bg-gradient-to-br from-[#071A33] via-[#103058] to-[#18477d]" />
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#071A33] via-[#103058] to-[#1B4C86]">
 
         {/* Glow */}
 
-        <div className="absolute -top-48 left-1/2 -translate-x-1/2 h-[700px] w-[700px] rounded-full bg-blue-400/10 blur-3xl" />
+        <div className="absolute left-1/2 top-[-200px] h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-blue-400/20 blur-3xl" />
 
-        <div className="relative max-w-7xl mx-auto px-6 py-32 lg:py-44">
+        <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32">
+
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+
+            {/* LEFT */}
+
+            <motion.div
+
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: .8 }}
+
+            >
+
+              <div className="inline-flex rounded-full bg-white/10 backdrop-blur-lg border border-white/20 px-5 py-2 text-blue-100 text-xs uppercase tracking-[0.3em]">
+
+                International Student-Led Nonprofit
+
+              </div>
+
+              <h1
+                className={`${serif.className} mt-10 text-white text-5xl md:text-6xl lg:text-7xl leading-tight`}
+              >
+
+                Building the Next Generation of
+
+                <span className="block text-blue-300">
+                  Financially Empowered Leaders.
+                </span>
+
+              </h1>
+
+              <p className="mt-8 max-w-xl text-lg text-blue-100 leading-relaxed">
+
+                Financial Literacy for Youth (FLY) equips students with
+                financial education, leadership experience, and opportunities
+                to create meaningful change through chapters, advocacy, and
+                the FLY Corporate Fellowship.
+
+              </p>
+
+              <div className="flex flex-wrap gap-5 mt-12">
+
+                <a
+                  href="/internship"
+                  className="rounded-full bg-[#2F80ED] px-8 py-4 text-white font-semibold shadow-2xl hover:scale-105 transition"
+                >
+                  Become a Member
+                </a>
+
+                <a
+                  href="/chapter"
+                  className="rounded-full border border-white/30 px-8 py-4 text-white hover:bg-white hover:text-[#071A33] transition"
+                >
+                  Start a Chapter
+                </a>
+
+              </div>
+
+            </motion.div>
+
+            {/* RIGHT */}
+
+            <motion.div
+
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: .9 }}
+
+              className="space-y-6"
+
+            >
+
+              <div className="rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-8">
+
+                <p className="uppercase tracking-[0.25em] text-xs text-blue-200">
+                  Reach
+                </p>
+
+                <h2 className="mt-4 text-6xl font-bold text-white">
+                  5+
+                </h2>
+
+                <p className="mt-3 text-blue-100">
+                  International Chapters
+                </p>
+
+              </div>
+
+              <div className="rounded-3xl bg-white shadow-2xl p-8">
+
+                <p className="uppercase tracking-[0.25em] text-xs text-gray-400">
+                  Community
+                </p>
+
+                <h2 className="mt-4 text-6xl font-bold text-[#103058]">
+                  100+
+                </h2>
+
+                <p className="mt-3 text-gray-500">
+                  Students Impacted
+                </p>
+
+              </div>
+
+              <div className="rounded-3xl bg-[#163F73] border border-blue-400/30 p-8">
+
+                <p className="uppercase tracking-[0.25em] text-xs text-blue-300">
+                  Featured Opportunity
+                </p>
+
+                <h3 className="mt-4 text-3xl font-semibold text-white">
+
+                  FLY Corporate Fellowship
+
+                </h3>
+
+                <p className="mt-4 text-blue-100 leading-relaxed">
+
+                  Gain real-world experience through leadership,
+                  finance, policy, and nonprofit initiatives.
+
+                </p>
+
+              </div>
+
+            </motion.div>
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* ================= WHO WE ARE ================= */}
+
+      <section className="bg-white py-32">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="grid lg:grid-cols-12 gap-16 items-center">
+
+            {/* LEFT */}
+
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: .7 }}
+              className="lg:col-span-7"
+            >
+
+              <p className="uppercase tracking-[0.35em] text-[#2F80ED] text-sm font-semibold">
+                WHO WE ARE
+              </p>
+
+              <h2
+                className={`${serif.className} mt-6 text-5xl md:text-6xl leading-tight`}
+              >
+                Financial literacy
+                <br />
+                should be a right—
+                <br />
+                not a privilege.
+              </h2>
+
+              <p className="mt-8 text-lg leading-9 text-gray-600 max-w-2xl">
+
+                Financial Literacy for Youth (FLY) is an international
+                student-led nonprofit dedicated to making financial education
+                accessible, engaging, and impactful. Through leadership,
+                education, and community initiatives, students gain practical
+                financial skills while creating meaningful change within their
+                schools and communities.
+
+              </p>
+
+            </motion.div>
+
+            {/* RIGHT */}
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: .8 }}
+              className="lg:col-span-5"
+            >
+
+              <div className="rounded-[36px] bg-gradient-to-br from-[#071A33] to-[#103058] p-10 shadow-2xl">
+
+                <div className="space-y-10">
+
+                  <div className="border-b border-white/10 pb-8">
+
+                    <h3 className="text-white text-2xl font-semibold">
+                      Education
+                    </h3>
+
+                    <p className="mt-3 text-blue-100 leading-7">
+                      Workshops, curriculum, and real-world financial
+                      education designed for today's students.
+                    </p>
+
+                  </div>
+
+                  <div className="border-b border-white/10 pb-8">
+
+                    <h3 className="text-white text-2xl font-semibold">
+                      Leadership
+                    </h3>
+
+                    <p className="mt-3 text-blue-100 leading-7">
+                      Fellowships, executive positions, chapter leadership,
+                      and hands-on nonprofit experience.
+                    </p>
+
+                  </div>
+
+                  <div>
+
+                    <h3 className="text-white text-2xl font-semibold">
+                      Community Impact
+                    </h3>
+
+                    <p className="mt-3 text-blue-100 leading-7">
+                      Helping students bring financial literacy to schools
+                      across the world through local chapters.
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </motion.div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= IMPACT ================= */}
+
+      <section className="bg-[#F8FAFC] py-28">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="grid md:grid-cols-4 gap-8">
+
+            {[
+              ["5+", "International Chapters"],
+              ["100+", "Students Reached"],
+              ["2026", "Founded"],
+              ["100%", "Student Led"],
+            ].map(([number, label]) => (
+
+              <motion.div
+                key={label}
+                whileHover={{ y: -8 }}
+                transition={{ duration: .2 }}
+                className="rounded-3xl bg-white border border-gray-200 p-10 shadow-lg hover:shadow-2xl"
+              >
+
+                <h3 className="text-5xl font-bold text-[#071A33]">
+                  {number}
+                </h3>
+
+                <p className="mt-4 text-gray-500 uppercase tracking-widest text-sm">
+                  {label}
+                </p>
+
+              </motion.div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= PROGRAMS ================= */}
+
+      <section className="py-32 bg-white">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="max-w-3xl">
+
+            <p className="uppercase tracking-[0.35em] text-[#2F80ED] text-sm font-semibold">
+              OUR PROGRAMS
+            </p>
+
+            <h2
+              className={`${serif.className} mt-6 text-5xl md:text-6xl leading-tight`}
+            >
+              Opportunities
+              <br />
+              to lead,
+              <br />
+              learn, and create impact.
+            </h2>
+
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mt-20">
+
+            {/* CARD */}
+
+            <motion.a
+              href="/internship"
+              whileHover={{ y: -10 }}
+              className="group rounded-[32px] border border-gray-200 p-10 bg-white hover:shadow-2xl transition"
+            >
+
+              <p className="text-xs uppercase tracking-[0.3em] text-[#2F80ED]">
+                Fellowship
+              </p>
+
+              <h3 className="mt-8 text-3xl font-semibold group-hover:text-[#103058] transition">
+
+                Corporate Fellowship
+
+              </h3>
+
+              <p className="mt-6 text-gray-600 leading-8">
+
+                Collaborate on finance,
+                operations, outreach,
+                research, and nonprofit
+                initiatives while building
+                professional experience.
+
+              </p>
+
+            </motion.a>
+
+            {/* CARD */}
+
+            <motion.a
+              href="/chapter"
+              whileHover={{ y: -10 }}
+              className="rounded-[32px] bg-[#071A33] text-white p-10 shadow-2xl"
+            >
+
+              <p className="uppercase tracking-[0.3em] text-blue-300 text-xs">
+                Chapters
+              </p>
+
+              <h3 className="mt-8 text-3xl font-semibold">
+
+                Start a Chapter
+
+              </h3>
+
+              <p className="mt-6 text-blue-100 leading-8">
+
+                Bring FLY to your
+                school and empower
+                students through
+                financial education
+                and leadership.
+
+              </p>
+
+            </motion.a>
+
+            {/* CARD */}
+
+            <motion.a
+              href="/education"
+              whileHover={{ y: -10 }}
+              className="group rounded-[32px] border border-gray-200 p-10 bg-[#F8FAFC] hover:shadow-2xl transition"
+            >
+
+              <p className="uppercase tracking-[0.3em] text-[#2F80ED] text-xs">
+                Education
+              </p>
+
+              <h3 className="mt-8 text-3xl font-semibold">
+
+                Learning Hub
+
+              </h3>
+
+              <p className="mt-6 text-gray-600 leading-8">
+
+                Explore practical
+                financial resources,
+                workshops, and
+                educational content
+                created for students.
+
+              </p>
+
+            </motion.a>
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* ================= FEATURED INITIATIVE ================= */}
+
+      <section className="bg-[#071A33] text-white py-32 overflow-hidden relative">
+
+        <div className="absolute inset-0 bg-gradient-to-br from-[#071A33] via-[#103058] to-[#18477D]" />
+
+        <div className="absolute right-[-200px] top-[-120px] h-[500px] w-[500px] rounded-full bg-blue-400/10 blur-3xl" />
+        <div className="absolute left-[-250px] bottom-[-180px] h-[500px] w-[500px] rounded-full bg-blue-300/10 blur-3xl" />
+
+        <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
 
           <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .8 }}
-            className="max-w-4xl"
+            initial={{ opacity: 0, x: -25 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
           >
 
-            <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md px-5 py-2 text-xs uppercase tracking-[0.35em] text-blue-100">
+            <p className="uppercase tracking-[0.35em] text-blue-300 text-sm font-semibold">
+              FEATURED PROGRAM
+            </p>
 
-              International Student-Led Nonprofit
+            <h2 className={`${serif.className} text-5xl md:text-6xl mt-6 leading-tight`}>
+              The FLY
+              <br />
+              Corporate
+              <br />
+              Fellowship
+            </h2>
+
+            <p className="mt-8 text-lg text-blue-100 leading-8 max-w-xl">
+              The Corporate Fellowship gives students practical experience
+              working on real nonprofit initiatives in finance, operations,
+              communications, outreach, and strategic growth while making a
+              measurable impact.
+            </p>
+
+            <a
+              href="/internship"
+              className="inline-flex mt-10 rounded-full bg-white text-[#071A33] px-8 py-4 font-semibold hover:scale-105 transition"
+            >
+              Learn More
+            </a>
+
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 25 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+
+            <div className="rounded-[40px] bg-white/10 backdrop-blur-xl border border-white/10 p-10">
+
+              <div className="space-y-10">
+
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Real Experience
+                  </h3>
+
+                  <p className="mt-3 text-blue-100">
+                    Build tangible leadership experience while contributing to
+                    an international nonprofit.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Meaningful Projects
+                  </h3>
+
+                  <p className="mt-3 text-blue-100">
+                    Work on outreach, finance, education, partnerships, and
+                    organizational growth.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Student Leadership
+                  </h3>
+
+                  <p className="mt-3 text-blue-100">
+                    Collaborate with ambitious students from different schools
+                    and communities.
+                  </p>
+                </div>
+
+              </div>
 
             </div>
 
-            <h1
-              className={`${serif.className} mt-10 text-white text-5xl md:text-7xl lg:text-8xl leading-[0.95]`}
-            >
-              Building the
-              <br />
-              next generation
-              <br />
-              of financially
-              <span className="text-blue-300"> empowered leaders.</span>
-            </h1>
+          </motion.div>
 
-            <p className="mt-10 max-w-2xl text-lg md:text-xl text-blue-100 leading-relaxed">
-              Financial Literacy for Youth (FLY) equips students with practical
-              financial knowledge, leadership opportunities, and community
-              impact through education, chapters, and the FLY Corporate
-              Fellowship.
+        </div>
+
+      </section>
+
+
+
+      {/* ================= FINAL CTA ================= */}
+
+      <section className="bg-white py-32">
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+
+            <p className="uppercase tracking-[0.35em] text-[#2F80ED] text-sm font-semibold">
+              JOIN THE MOVEMENT
             </p>
 
-            <div className="flex flex-wrap gap-5 mt-12">
+            <h2
+              className={`${serif.className} text-5xl md:text-7xl mt-6 leading-tight`}
+            >
+              Every student
+              <br />
+              deserves financial
+              <br />
+              confidence.
+            </h2>
+
+            <p className="mt-10 max-w-3xl mx-auto text-xl text-gray-600 leading-9">
+              Whether you're interested in becoming a fellow, launching a
+              chapter, or supporting financial education in your community,
+              there's a place for you at FLY.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-6 mt-14">
 
               <a
                 href="/internship"
-                className="rounded-full bg-white px-8 py-4 text-[#071A33] font-semibold shadow-xl hover:scale-105 transition"
+                className="rounded-full bg-[#071A33] text-white px-10 py-5 font-semibold hover:bg-[#103058] transition"
               >
-                Join FLY
+                Become a Fellow
               </a>
 
               <a
                 href="/chapter"
-                className="rounded-full border border-white/30 px-8 py-4 text-white backdrop-blur hover:bg-white hover:text-[#071A33] transition"
+                className="rounded-full border border-[#071A33] px-10 py-5 font-semibold hover:bg-[#071A33] hover:text-white transition"
               >
                 Start a Chapter
               </a>
@@ -95,72 +605,87 @@ export default function Home() {
 
       </section>
 
-      {/* ================= IMPACT PREVIEW ================= */}
 
-      <section className="-mt-20 relative z-20 px-6">
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
+      {/* ================= FOOTER ================= */}
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className="rounded-3xl bg-white shadow-2xl p-8"
-          >
-            <h2 className="text-5xl font-bold text-[#103058]">
-              5+
-            </h2>
+      <footer className="border-t border-gray-200 bg-[#F8FAFC]">
 
-            <p className="mt-3 text-gray-500">
-              International Chapters
+        <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between gap-12">
+
+          <div>
+
+            <h3 className={`${serif.className} text-3xl`}>
+              FLY
+            </h3>
+
+            <p className="mt-5 max-w-md text-gray-600 leading-7">
+              Financial Literacy for Youth is an international student-led
+              nonprofit dedicated to expanding access to financial education
+              through leadership, community engagement, and innovation.
             </p>
 
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className="rounded-3xl bg-white shadow-2xl p-8"
-          >
-            <h2 className="text-5xl font-bold text-[#103058]">
-              100+
-            </h2>
+          <div className="grid grid-cols-2 gap-14 text-sm">
 
-            <p className="mt-3 text-gray-500">
-              Students Impacted
-            </p>
+            <div>
 
-          </motion.div>
+              <p className="font-semibold mb-4">
+                Organization
+              </p>
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className="rounded-3xl bg-white shadow-2xl p-8"
-          >
-            <h2 className="text-5xl font-bold text-[#103058]">
-              2026
-            </h2>
+              <div className="space-y-3">
 
-            <p className="mt-3 text-gray-500">
-              Founded
-            </p>
+                <a href="/" className="block hover:text-[#103058]">
+                  Home
+                </a>
 
-          </motion.div>
+                <a href="/education" className="block hover:text-[#103058]">
+                  Education
+                </a>
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className="rounded-3xl bg-white shadow-2xl p-8"
-          >
-            <h2 className="text-5xl font-bold text-[#103058]">
-              Student
-            </h2>
+                <a href="/internship" className="block hover:text-[#103058]">
+                  Fellowship
+                </a>
 
-            <p className="mt-3 text-gray-500">
-              Led Organization
-            </p>
+                <a href="/chapter" className="block hover:text-[#103058]">
+                  Chapters
+                </a>
 
-          </motion.div>
+              </div>
+
+            </div>
+
+            <div>
+
+              <p className="font-semibold mb-4">
+                Connect
+              </p>
+
+              <div className="space-y-3">
+
+                <a href="mailto:info@fly-initiative.org">
+                  Email
+                </a>
+
+                <a href="#">
+                  Instagram
+                </a>
+
+                <a href="#">
+                  LinkedIn
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
-      </section>
-
-    </main>
+      </footer>
+</main>
   );
 }
