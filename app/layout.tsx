@@ -50,7 +50,7 @@ export default function RootLayout({
             <div className="relative group">
 
   <Link
-    href="/chapter/page"
+    href="/chapter"
     className="hover:text-white"
   >
     Chapters
