@@ -13,7 +13,7 @@ export default function ChapterDropdown() {
         onClick={() => setOpen(!open)}
         className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70"
       >
-        Chapters
+        FLY Corporate Strategy Fellowship 
 
         <span
           className={`text-sm transition-transform ${
@@ -30,35 +30,20 @@ export default function ChapterDropdown() {
         <div className="absolute top-8 left-0 bg-[#071A33] rounded-xl shadow-xl w-64 p-3 border border-white/10">
 
           <Link
-            href="/chapter"
+            href="/Fellowship"
             className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
           >
-            Chapter Overview
+            Fellows
           </Link>
 
 
           <Link
-            href="/chapter/howto"
+            href="/Fellowship/Partners"
             className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
           >
-            How to Start a Chapter
+            Corporate Partners
           </Link>
 
-
-          <Link
-            href="/chapter/pathways"
-            className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
-          >
-            Chapter Pathways
-          </Link>
-
-
-          <Link
-            href="/chapter/chapterapply"
-            className="block px-4 py-3 rounded-lg hover:bg-white/10 transition"
-          >
-            Apply to Start a Chapter
-          </Link>
 
 
         </div>

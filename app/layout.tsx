@@ -2,6 +2,7 @@ import "./globals.css";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
 import ChapterDropdown from "./ChapterDropdown";
+import FellowDropdown from "./FellowDropdown";
 const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
 
@@ -46,7 +47,7 @@ export default function RootLayout({
             <nav className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70">
               <a href="/" className="hover:text-white">Home</a>
               <a href="/education" className="hover:text-white">Education</a>
-              <a href="/Internship" className="hover:text-white">Internship</a>
+            <FellowDropdown />
               <a href="/board" className="hover:text-white">Board</a>
             <ChapterDropdown />
             </nav>
