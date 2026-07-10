@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
+import ChapterDropdown from "./ChapterDropdown";
 const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
 
@@ -47,41 +48,7 @@ export default function RootLayout({
               <a href="/education" className="hover:text-white">Education</a>
               <a href="/Internship" className="hover:text-white">Internship</a>
               <a href="/board" className="hover:text-white">Board</a>
-            <div className="relative group">
-
-  <Link
-    href="/chapter"
-    className="hover:text-white"
-  >
-    Chapters
-  </Link>
-
-  <div className="absolute hidden group-hover:block top-6 left-0 bg-[#071A33] rounded-xl shadow-xl w-64 p-3">
-
-    <Link
-      href="/chapter/howto"
-      className="block px-4 py-3 rounded-lg hover:bg-white/10"
-    >
-      How to Start a Chapter
-    </Link>
-
-    <Link
-      href="/chapter/pathways"
-      className="block px-4 py-3 rounded-lg hover:bg-white/10"
-    >
-      Chapter Pathways
-    </Link>
-
-    <Link
-      href="/chapter/chapterapply"
-      className="block px-4 py-3 rounded-lg hover:bg-white/10"
-    >
-      Apply to Start a Chapter
-    </Link>
-
-  </div>
-
-</div>
+            <ChapterDropdown />
             </nav>
 
           </div>
