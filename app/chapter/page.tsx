@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Playfair_Display, Inter } from "next/font/google";
 
 const serif = Playfair_Display({ subsets: ["latin"] });
@@ -7,129 +8,293 @@ const sans = Inter({ subsets: ["latin"] });
 
 export default function Chapter() {
   return (
-    <div className={`${sans.className} text-[#071A33] bg-white`}>
+    <main className={`${sans.className} bg-[#F8FAFC] text-[#071A33]`}>
 
-      {/* HERO */}
-      <section className="py-28 px-6 bg-[#0B2A52] text-white text-center">
-        <div className="max-w-4xl mx-auto">
+      {/* ================= HERO ================= */}
 
-          <h1 className={`${serif.className} text-5xl md:text-6xl font-semibold`}>
-            Create a FLY Chapter
-          </h1>
+      <section className="relative overflow-hidden bg-[#071A33] text-white">
 
-          <p className="mt-6 text-white/80 text-lg">
-            Start a Financial Literacy for Youth chapter at your school.
-          </p>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#071A33] via-[#103058] to-[#18477D]" />
 
-          <a
-            href="https://forms.gle/Ypn6cgjhMTPUtdNDA"
-            target="_blank"
-            className="inline-block mt-10 px-8 py-3 bg-white text-[#0B2A52] uppercase text-sm tracking-widest"
+        <div className="relative max-w-7xl mx-auto px-6 py-32">
+
+          <motion.div
+            initial={{opacity:0, y:25}}
+            animate={{opacity:1, y:0}}
+            transition={{duration:.8}}
+            className="max-w-4xl"
           >
-            Apply
-          </a>
+
+            <p className="uppercase tracking-[0.35em] text-sm text-blue-300">
+              FLY Chapter Network
+            </p>
+
+
+            <h1 className={`${serif.className} mt-8 text-5xl md:text-7xl leading-tight`}>
+              Bring financial
+              <br/>
+              literacy to
+              <br/>
+              <span className="text-blue-300">
+                your community.
+              </span>
+            </h1>
+
+
+            <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/70 leading-relaxed">
+              Create an official Financial Literacy for Youth chapter at your
+              school or community. Empower students through financial education,
+              leadership opportunities, and meaningful community impact.
+            </p>
+
+
+            <div className="flex flex-wrap gap-5 mt-10">
+
+              <a
+                href="/chapter/apply"
+                className="rounded-full bg-white text-[#071A33] px-8 py-4 font-semibold hover:scale-105 transition"
+              >
+                Start a Chapter
+              </a>
+
+
+              <a
+                href="/chapter/roadmap"
+                className="rounded-full border border-white/30 px-8 py-4 hover:bg-white hover:text-[#071A33] transition"
+              >
+                Learn How It Works
+              </a>
+
+            </div>
+
+
+          </motion.div>
 
         </div>
+
       </section>
 
-      {/* REQUIREMENTS */}
-      <section className="py-24 px-6 bg-[#eaf3ff]">
-        <div className="max-w-5xl mx-auto text-center">
 
-          <h2 className={`${serif.className} text-3xl font-semibold`}>
-            Requirements
-          </h2>
 
-          <div className="grid md:grid-cols-3 gap-10 mt-14 text-left">
+      {/* ================= WHY START ================= */}
 
-            <div className="bg-white p-8 border border-gray-200">
-              <h3 className="font-semibold">Team</h3>
-              <p className="mt-3 text-sm text-gray-600">
-                3–5 committed students to lead the chapter.
-              </p>
-            </div>
+      <section className="py-28 px-6">
 
-            <div className="bg-white p-8 border border-gray-200">
-              <h3 className="font-semibold">Initiative</h3>
-              <p className="mt-3 text-sm text-gray-600">
-                Willingness to host events and promote financial literacy.
-              </p>
-            </div>
+        <div className="max-w-6xl mx-auto">
 
-            <div className="bg-white p-8 border border-gray-200">
-              <h3 className="font-semibold">Leadership</h3>
-              <p className="mt-3 text-sm text-gray-600">
-                A student leader to coordinate communication.
-              </p>
-            </div>
+
+          <div className="text-center max-w-3xl mx-auto">
+
+            <p className="uppercase tracking-[0.3em] text-sm text-blue-600 font-semibold">
+              Why Start a Chapter?
+            </p>
+
+
+            <h2 className={`${serif.className} mt-6 text-5xl`}>
+              Create opportunities.
+              <br/>
+              Build impact.
+            </h2>
+
+
+            <p className="mt-6 text-gray-600 text-lg leading-relaxed">
+              FLY chapters allow students to bring financial literacy education
+              directly to their communities while developing leadership,
+              communication, and organizational skills.
+            </p>
+
 
           </div>
 
-        </div>
-      </section>
 
-      {/* STEPS */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-5xl mx-auto text-center">
 
-          <h2 className={`${serif.className} text-3xl font-semibold`}>
-            How to Start
-          </h2>
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
 
-          <div className="grid md:grid-cols-3 gap-10 mt-14 text-left">
 
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-400">Step 1</p>
-              <h3 className="mt-2 font-semibold">Apply</h3>
-              <p className="mt-3 text-sm text-gray-600">
-                Submit your application form.
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+
+              <h3 className="text-2xl font-semibold">
+                Leadership
+              </h3>
+
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Lead a student organization, manage initiatives, and gain
+                experience building programs from the ground up.
               </p>
+
             </div>
 
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-400">Step 2</p>
-              <h3 className="mt-2 font-semibold">Review</h3>
-              <p className="mt-3 text-sm text-gray-600">
-                We evaluate your school and team.
+
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+
+              <h3 className="text-2xl font-semibold">
+                Financial Education
+              </h3>
+
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Teach students essential financial skills through workshops,
+                programs, and educational initiatives.
               </p>
+
             </div>
 
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-400">Step 3</p>
-              <h3 className="mt-2 font-semibold">Launch</h3>
-              <p className="mt-3 text-sm text-gray-600">
-                Your chapter is approved and activated.
+
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+
+              <h3 className="text-2xl font-semibold">
+                Community Impact
+              </h3>
+
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Build solutions that expand access to financial literacy in
+                schools and communities.
               </p>
+
             </div>
+
 
           </div>
 
+
         </div>
+
       </section>
 
-      {/* FINAL APPLY */}
+
+
+
+
+      {/* ================= CHAPTER JOURNEY PREVIEW ================= */}
+
+      <section className="py-28 px-6 bg-[#EAF3FF]">
+
+
+        <div className="max-w-6xl mx-auto">
+
+
+          <div className="text-center">
+
+            <p className="uppercase tracking-[0.3em] text-sm text-[#103058] font-semibold">
+              The Process
+            </p>
+
+
+            <h2 className={`${serif.className} mt-6 text-5xl`}>
+              From idea to impact.
+            </h2>
+
+          </div>
+
+
+
+          <div className="grid md:grid-cols-4 gap-8 mt-16">
+
+
+            {[
+              {
+                number:"01",
+                title:"Apply",
+                text:"Submit your chapter application and share your vision."
+              },
+              {
+                number:"02",
+                title:"Onboard",
+                text:"Complete onboarding and receive chapter resources."
+              },
+              {
+                number:"03",
+                title:"Launch",
+                text:"Create your chapter and begin programming."
+              },
+              {
+                number:"04",
+                title:"Impact",
+                text:"Choose your pathway and grow your initiatives."
+              }
+            ].map((step)=>(
+              
+              <div
+                key={step.number}
+                className="bg-white rounded-3xl p-8 shadow-md"
+              >
+
+                <p className="text-blue-600 font-bold text-xl">
+                  {step.number}
+                </p>
+
+                <h3 className="mt-4 text-xl font-semibold">
+                  {step.title}
+                </h3>
+
+                <p className="mt-3 text-gray-600 text-sm leading-relaxed">
+                  {step.text}
+                </p>
+
+              </div>
+
+            ))}
+
+
+          </div>
+
+
+
+          <div className="text-center mt-14">
+
+            <a
+              href="/chapter/roadmap"
+              className="text-[#103058] font-semibold hover:underline"
+            >
+              View Full Chapter Roadmap →
+            </a>
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+      {/* ================= FINAL CTA ================= */}
+
       <section className="py-28 px-6 bg-[#071A33] text-white text-center">
+
+
         <div className="max-w-3xl mx-auto">
 
-          <h2 className={`${serif.className} text-3xl font-semibold`}>
-            Start Your Chapter
+
+          <h2 className={`${serif.className} text-5xl`}>
+            Ready to bring FLY to your community?
           </h2>
 
-          <p className="mt-6 text-white/80">
-            Bring FLY to your community.
+
+          <p className="mt-6 text-white/70 text-lg">
+            Join a growing network of student leaders working to make
+            financial literacy accessible for everyone.
           </p>
 
+
           <a
-            href="https://forms.gle/Ypn6cgjhMTPUtdNDA"
-            target="_blank"
-            className="inline-block mt-10 px-8 py-3 bg-white text-[#071A33] uppercase text-sm tracking-widest"
+            href="/chapter/apply"
+            className="inline-block mt-10 bg-white text-[#071A33] rounded-full px-10 py-4 font-semibold hover:scale-105 transition"
           >
-            Apply Now
+            Apply to Start a Chapter
           </a>
 
+
         </div>
+
+
       </section>
 
-    </div>
+
+    </main>
   );
 }
