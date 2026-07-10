@@ -51,7 +51,7 @@ export default function Chapter() {
             <div className="flex flex-wrap gap-5 mt-10">
 
               <a
-                href="/chapter/apply"
+                href="/chapter/chapterapply"
                 className="rounded-full bg-white text-[#071A33] px-8 py-4 font-semibold hover:scale-105 transition"
               >
                 Start a Chapter
@@ -59,7 +59,7 @@ export default function Chapter() {
 
 
               <a
-                href="/chapter/roadmap"
+                href="/chapter/pathways"
                 className="rounded-full border border-white/30 px-8 py-4 hover:bg-white hover:text-[#071A33] transition"
               >
                 Learn How It Works
