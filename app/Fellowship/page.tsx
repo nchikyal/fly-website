@@ -6,7 +6,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
 
-export default function Fellows() {
+export default function Fellowship() {
   return (
     <main className={`${sans.className} bg-[#F8FAFC] text-[#071A33]`}>
 
