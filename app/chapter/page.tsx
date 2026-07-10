@@ -51,7 +51,7 @@ export default function Chapter() {
             <div className="flex flex-wrap gap-5 mt-10">
 
               <a
-                href="/chapterapply"
+                href="/chapter/apply"
                 className="rounded-full bg-white text-[#071A33] px-8 py-4 font-semibold hover:scale-105 transition"
               >
                 Start a Chapter
@@ -59,7 +59,7 @@ export default function Chapter() {
 
 
               <a
-                href="/pathways"
+                href="/chapter/roadmap"
                 className="rounded-full border border-white/30 px-8 py-4 hover:bg-white hover:text-[#071A33] transition"
               >
                 Learn How It Works
@@ -244,7 +244,7 @@ export default function Chapter() {
           <div className="text-center mt-14">
 
             <a
-              href="/howto"
+              href="/chapter/roadmap"
               className="text-[#103058] font-semibold hover:underline"
             >
               How to Start a Chapter in Your Region →
@@ -282,7 +282,7 @@ export default function Chapter() {
 
 
           <a
-            href="/apply"
+            href="/chapter/apply"
             className="inline-block mt-10 bg-white text-[#071A33] rounded-full px-10 py-4 font-semibold hover:scale-105 transition"
           >
             Apply to Start a Chapter
