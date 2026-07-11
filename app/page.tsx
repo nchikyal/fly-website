@@ -116,37 +116,6 @@ export default function Home() {
 
             >
 
-              <div className="rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-8">
-
-                <p className="uppercase tracking-[0.25em] text-xs text-blue-200">
-                  Reach
-                </p>
-
-                <h2 className="mt-4 text-6xl font-bold text-white">
-                  5+
-                </h2>
-
-                <p className="mt-3 text-blue-100">
-                  International Chapters
-                </p>
-
-              </div>
-
-              <div className="rounded-3xl bg-white shadow-2xl p-8">
-
-                <p className="uppercase tracking-[0.25em] text-xs text-gray-400">
-                  Community
-                </p>
-
-                <h2 className="mt-4 text-6xl font-bold text-[#103058]">
-                  100+
-                </h2>
-
-                <p className="mt-3 text-gray-500">
-                  Students Impacted
-                </p>
-
-              </div>
 
               <div className="rounded-3xl bg-[#163F73] border border-blue-400/30 p-8">
 
@@ -203,7 +172,7 @@ export default function Home() {
               >
                 Financial literacy
                 <br />
-                should be a right—
+                should be a right,
                 <br />
                 not a privilege.
               </h2>
