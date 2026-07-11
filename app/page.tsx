@@ -256,47 +256,6 @@ export default function Home() {
       </section>
 
 
-      {/* ================= IMPACT ================= */}
-
-      <section className="bg-[#F8FAFC] py-28">
-
-        <div className="max-w-7xl mx-auto px-6">
-
-          <div className="grid md:grid-cols-4 gap-8">
-
-            {[
-              ["5+", "International Chapters"],
-              ["100+", "Students Reached"],
-              ["2026", "Founded"],
-              ["100%", "Student Led"],
-            ].map(([number, label]) => (
-
-              <motion.div
-                key={label}
-                whileHover={{ y: -8 }}
-                transition={{ duration: .2 }}
-                className="rounded-3xl bg-white border border-gray-200 p-10 shadow-lg hover:shadow-2xl"
-              >
-
-                <h3 className="text-5xl font-bold text-[#071A33]">
-                  {number}
-                </h3>
-
-                <p className="mt-4 text-gray-500 uppercase tracking-widest text-sm">
-                  {label}
-                </p>
-
-              </motion.div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
-
       {/* ================= PROGRAMS ================= */}
 
       <section className="py-32 bg-white">
