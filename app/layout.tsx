@@ -56,12 +56,7 @@ export default function RootLayout({
                 Home
               </Link>
 
-              <Link
-                href="/education"
-                className="hover:text-white transition"
-              >
-                Education
-              </Link>
+        
 
               <FellowDropdown />
 
