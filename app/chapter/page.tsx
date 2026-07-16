@@ -244,7 +244,7 @@ export default function Chapter() {
           <div className="text-center mt-14">
 
             <a
-              href="/chapter/roadmap"
+              href="/chapter/pathways"
               className="text-[#103058] font-semibold hover:underline"
             >
               How to Start a Chapter in Your Region →
@@ -282,7 +282,7 @@ export default function Chapter() {
 
 
           <a
-            href="/chapter/apply"
+            href="/chapter/chapterapply"
             className="inline-block mt-10 bg-white text-[#071A33] rounded-full px-10 py-4 font-semibold hover:scale-105 transition"
           >
             Apply to Start a Chapter

@@ -323,7 +323,7 @@ export default function Pathways() {
 
 
           <a
-            href="/chapter/apply"
+            href="/chapter/chapterapply"
             className="inline-block mt-10 px-10 py-4 rounded-full bg-white text-[#071A33] font-semibold hover:scale-105 transition"
           >
             Start a Chapter

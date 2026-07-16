@@ -310,7 +310,7 @@ export default function Roadmap() {
 
 
           <a
-            href="/chapter/apply"
+            href="/chapter/chapterapply"
             className="inline-block mt-10 bg-white text-[#071A33] rounded-full px-10 py-4 font-semibold hover:scale-105 transition"
           >
             Apply Now

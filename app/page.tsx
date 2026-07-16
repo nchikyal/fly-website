@@ -2,6 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Playfair_Display, Inter } from "next/font/google";
+import {
+  Mail,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
@@ -87,7 +92,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-5 mt-12">
 
                 <a
-                  href="/internship"
+                  href="/Fellowship"
                   className="rounded-full bg-[#2F80ED] px-8 py-4 text-white font-semibold shadow-2xl hover:scale-105 transition"
                 >
                   Become a Member
@@ -537,83 +542,108 @@ export default function Home() {
 
       {/* ================= FOOTER ================= */}
 
-      <footer className="border-t border-gray-200 bg-[#F8FAFC]">
+<footer className="border-t border-gray-200 bg-[#F8FAFC]">
 
-        <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between gap-12">
+  <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between gap-12">
 
-          <div>
+    {/* Left */}
 
-            <h3 className={`${serif.className} text-3xl`}>
-              FLY
-            </h3>
+    <div>
 
-            <p className="mt-5 max-w-md text-gray-600 leading-7">
-              Financial Literacy for Youth is an international student-led
-              nonprofit dedicated to expanding access to financial education
-              through leadership, community engagement, and innovation.
-            </p>
+      <h3 className={`${serif.className} text-3xl`}>
+        FLY
+      </h3>
 
-          </div>
+      <p className="mt-5 max-w-md text-gray-600 leading-7">
+        Financial Literacy for Youth is an international student-led nonprofit
+        dedicated to expanding access to financial education through leadership,
+        community engagement, and innovation.
+      </p>
 
-          <div className="grid grid-cols-2 gap-14 text-sm">
+    </div>
 
-            <div>
+    {/* Right */}
 
-              <p className="font-semibold mb-4">
-                Organization
-              </p>
+    <div className="grid grid-cols-2 gap-14 text-sm">
 
-              <div className="space-y-3">
+      {/* Organization */}
 
-                <a href="/" className="block hover:text-[#103058]">
-                  Home
-                </a>
+      <div>
 
-                <a href="/education" className="block hover:text-[#103058]">
-                  Education
-                </a>
+        <p className="font-semibold mb-4">
+          Organization
+        </p>
 
-                <a href="/internship" className="block hover:text-[#103058]">
-                  Fellowship
-                </a>
+        <div className="space-y-3">
 
-                <a href="/chapter" className="block hover:text-[#103058]">
-                  Chapters
-                </a>
+          <a href="/" className="block hover:text-[#103058]">
+            Home
+          </a>
 
-              </div>
+          <a href="/education" className="block hover:text-[#103058]">
+            Education
+          </a>
 
-            </div>
+          <a href="/internship" className="block hover:text-[#103058]">
+            Fellowship
+          </a>
 
-            <div>
-
-              <p className="font-semibold mb-4">
-                Connect
-              </p>
-
-              <div className="space-y-3">
-
-                <a href="mailto:info@fly-initiative.org">
-                  Email
-                </a>
-
-                <a href="#">
-                  Instagram
-                </a>
-
-                <a href="#">
-                  LinkedIn
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
+          <a href="/chapter" className="block hover:text-[#103058]">
+            Chapters
+          </a>
 
         </div>
 
-      </footer>
+      </div>
+
+      {/* Connect */}
+
+      <div>
+
+        <p className="font-semibold mb-4">
+          Connect
+        </p>
+
+        <div className="space-y-4">
+
+          <a
+            href="mailto:flyinitiative.team@gmail.com"
+            className="flex items-center gap-3 hover:text-[#2F80ED] transition"
+          >
+            <Mail size={18} />
+            <span>flyinitiative.team@gmail.com</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/fly.initiative/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:text-[#2F80ED] transition"
+          >
+            <Instagram size={18} />
+            <span>@fly.initiative</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/flyinitiative"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 hover:text-[#2F80ED] transition"
+          >
+            <Linkedin size={18} />
+            <span>FLY Initiative</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
 </main>
   );
 }
