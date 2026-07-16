@@ -50,7 +50,7 @@ export default function Partners() {
         <div className="flex flex-wrap gap-5 mt-12">
 
           <a
-            href="YOUR_CONSULTATION_FORM"
+            href="https://forms.gle/Tch8pk3MgW1TUP5t8"
             target="_blank"
             className="rounded-full bg-white px-8 py-4 text-[#071A33] font-semibold shadow-xl hover:scale-105 transition"
           >
@@ -670,7 +670,7 @@ export default function Partners() {
           </p>
 
           <a
-            href="YOUR_CONSULTATION_FORM"
+            href="https://forms.gle/Tch8pk3MgW1TUP5t8"
             target="_blank"
             className="inline-block mt-12 rounded-full bg-white px-10 py-4 text-[#071A33] font-semibold shadow-xl hover:scale-105 transition"
           >

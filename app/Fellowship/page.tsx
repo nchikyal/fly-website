@@ -42,7 +42,7 @@ export default function Fellowship() {
             </p>
 
             <a
-              href="YOUR_APPLICATION_LINK"
+              href="https://forms.gle/fFYcKmoAivrEDgBe6"
               target="_blank"
               className="inline-block mt-10 px-10 py-4 rounded-full bg-white text-[#071A33] font-semibold hover:scale-105 transition"
             >
@@ -490,7 +490,7 @@ export default function Fellowship() {
     <div className="mt-12 flex justify-center">
 
       <a
-        href="YOUR_APPLICATION_LINK"
+        href="https://forms.gle/fFYcKmoAivrEDgBe6"
         target="_blank"
         className="rounded-full bg-white px-10 py-4 text-[#071A33] font-semibold shadow-xl hover:scale-105 transition"
       >

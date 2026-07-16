@@ -30,7 +30,7 @@ export default function Home() {
           </span>
 
           <a
-            href="/internship"
+            href="/Fellowship"
             className="underline underline-offset-4 hover:text-blue-200 transition"
           >
             Apply →
