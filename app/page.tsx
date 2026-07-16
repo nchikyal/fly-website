@@ -579,7 +579,7 @@ export default function Home() {
             Education
           </a>
 
-          <a href="/internship" className="block hover:text-[#103058]">
+          <a href="/Fellowship" className="block hover:text-[#103058]">
             Fellowship
           </a>
 
@@ -599,34 +599,31 @@ export default function Home() {
           Connect
         </p>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
 
           <a
             href="mailto:flyinitiative.team@gmail.com"
-            className="flex items-center gap-3 hover:text-[#2F80ED] transition"
+            className="block hover:text-[#103058]"
           >
-            <Mail size={18} />
-            <span>flyinitiative.team@gmail.com</span>
+            flyinitiative.team@gmail.com
           </a>
 
           <a
             href="https://www.instagram.com/fly.initiative/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 hover:text-[#2F80ED] transition"
+            className="block hover:text-[#103058]"
           >
-            <Instagram size={18} />
-            <span>@fly.initiative</span>
+            @fly.initiative
           </a>
 
           <a
             href="https://www.linkedin.com/company/flyinitiative"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 hover:text-[#2F80ED] transition"
+            className="block hover:text-[#103058]"
           >
-            <Linkedin size={18} />
-            <span>FLY Initiative</span>
+            FLY Initiative
           </a>
 
         </div>
