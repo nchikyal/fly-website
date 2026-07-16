@@ -2,11 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Playfair_Display, Inter } from "next/font/google";
-import {
-  Mail,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
 
 const serif = Playfair_Display({ subsets: ["latin"] });
 const sans = Inter({ subsets: ["latin"] });
@@ -95,7 +90,7 @@ export default function Home() {
                   href="/Fellowship"
                   className="rounded-full bg-[#2F80ED] px-8 py-4 text-white font-semibold shadow-2xl hover:scale-105 transition"
                 >
-                  Become a Member
+                  Become a Corporate Fellow
                 </a>
 
                 <a
@@ -290,7 +285,7 @@ export default function Home() {
             {/* CARD */}
 
             <motion.a
-              href="/internship"
+              href="/Fellowship"
               whileHover={{ y: -10 }}
               className="group rounded-[32px] border border-gray-200 p-10 bg-white hover:shadow-2xl transition"
             >
@@ -419,7 +414,7 @@ export default function Home() {
             </p>
 
             <a
-              href="/internship"
+              href="/Fellowship"
               className="inline-flex mt-10 rounded-full bg-white text-[#071A33] px-8 py-4 font-semibold hover:scale-105 transition"
             >
               Learn More
@@ -517,7 +512,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-6 mt-14">
 
               <a
-                href="/internship"
+                href="/Fellowship"
                 className="rounded-full bg-[#071A33] text-white px-10 py-5 font-semibold hover:bg-[#103058] transition"
               >
                 Become a Fellow
